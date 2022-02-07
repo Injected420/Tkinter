@@ -36,6 +36,7 @@ class Kiloconvert:
     def convert(self):
         kilo = float(self.kilo_entry.get())
         miles = kilo * 0.6214
+        miles = format(miles, '.2f')
         messagebox.showinfo('Results', str(
             kilo) + " kilometers is equal to " + str(miles) + " miles")
 
